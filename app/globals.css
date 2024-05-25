@@ -2,12 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GalanoMedium */
+@font-face {
+  font-family: 'Galano';
+  src: url('fonts/GalanoGrotesqueAltMedium.otf');
+  font-weight: normal;
+}
+
+/* GalanoBold */
+@font-face {
+  font-family: 'Galano';
+  src: url('fonts/GalanoGrotesqueAltBold.otf');
+  font-weight: bold;
+}
+
+/* GalanoRegular */
+@font-face {
+  font-family: 'Galano';
+  src: url('fonts/GalanoGrotesqueAltRegular.otf');
+  font-weight: normal;
+}
+
+/* GalanoSemibold */
+@font-face {
+  font-family: 'Galano';
+  src: url('fonts/GalanoGrotesqueAltSemiBold.otf');
+  font-weight: 600; 
+}
+
+* {
+  font-family: 'Galano', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+.search_content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
